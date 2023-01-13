@@ -1,0 +1,190 @@
+*{
+    padding: 0;
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+}
+/* nav styles */
+.nav-item ul{
+list-style: none;
+display: flex;
+gap: 20px;
+
+}
+.nav-bar{
+   
+    display: flex;
+    justify-content: space-between;
+    margin: 80px 100px;
+}
+.nav-title{
+ font-weight: 700px;
+ font-size: 24px;
+ color:
+ #3A3A3A;
+}
+.nav-item li{
+    color: #3A3A3A;
+    font-weight: 600;
+    font-size: 16px;
+}
+/* header banner style  */
+
+.header{
+    display: flex;
+    justify-content: center;
+    gap: 369px;
+    
+}
+.header-img{
+   
+    background-image: url('images/Circle\ design.svg');
+    
+}
+
+.header-title{
+    font-weight: 700;
+font-size: 52px;
+}
+.btn-primary{
+    background-color: 
+    #E02C6D;
+    color: white;
+    padding: 10px 24px;
+    font-weight: 700;
+font-size: 16px;
+border: none;
+border-radius: 41px;
+margin-top: 16px;
+}
+/* online shop section style  */
+.online-shop{
+    display: flex;
+    justify-content: center;
+    gap: 80px;
+    margin-top: 100px;
+    background-color: #cdcdd255;
+}
+/* collection section  */
+.popular{
+    font-weight: 600;
+font-size: 28px;
+color: #3A3A3A;
+text-align: center;
+margin-top: 20px;
+}
+.collection-boxes{
+    margin-top: 100px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    justify-items: center;
+    row-gap: 30px;
+}
+
+.collection-box{
+    width: 329px;
+    height: 476px;
+  background-color:  #d5d5d5;
+  text-align: center;
+  align-items: center;
+  border-radius: 8px;
+   
+}
+.filled{
+    color:  #FB8200;
+}
+.collection-text{
+    color: #787885;
+}
+.price{
+    font-weight: 400;
+font-size: 24px;
+}
+.collection-heading{
+    font-weight: 500;
+font-size: 28px;
+}
+.see-more{
+    color: #E02C6D;
+    font-weight: 700;
+    font-size: 24px;
+    text-align: end;
+    margin-right: 97px;
+    margin-top: 30px;
+}
+/* featured section  */
+.featured-heading{
+    font-weight: 700;
+font-size: 38px;
+}
+.featured{
+    display: flex;
+    justify-content:center ;
+    gap: 396px;
+    margin-top: 100px;
+}
+/* footer  */
+.footer{
+    background-color: #0A0826;
+    text-align: center;
+    height: 300px;
+
+    margin-top: 100px;
+}
+.footer-icon{
+    display: flex;
+    gap: 30px;
+    justify-content: center;
+}
+.footer-text{
+    margin-top: 100px;
+    
+}
+.icon{
+    color: aliceblue;
+}
+
+.footer-heading , .footer-des{
+    color: white;
+    
+}
+.footer-content{
+    display: flex;
+    flex-direction: column;
+}
+
+/* responsive part */
+@media  screen and (max-width:576px) {
+    .header{
+       row-gap: 20px;
+       justify-content: center;
+        flex-direction: column-reverse;
+    }   
+    .online-shop{
+       justify-items: center;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .collection-box{
+        height: 100%;
+    }
+    .collection-boxes{
+        display: grid;
+        justify-content: center;
+        grid-template-columns: repeat(1,1fr);
+    }
+    .featured{
+        gap: 90px;
+        flex-direction: column-reverse;
+       
+    }
+    .nav-bar{
+        flex-direction: column;
+        margin-top: 20px;
+        text-align: center;
+    }
+    .nav-item ul{
+        text-align: center;
+        margin-left: -53px;
+    }
+    
+}
